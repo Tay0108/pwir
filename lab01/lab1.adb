@@ -16,7 +16,16 @@ procedure Lab1 is
     if A1 > A2 then return A1;
     else return A2; 
     end if;
-  end Max2;    
+  end Max2;  
+
+  function factorial(N : Natural) return Natural is
+    Factorial : Natural := 1;
+  begin
+    for I in 1..N loop
+      Factorial := Factorial * I; 
+    end loop;   
+    return Factorial;
+  end factorial; 
 
   -- funkcja "wyrażeniowa"  
   -- forma uproszczona funkcji
@@ -54,5 +63,6 @@ begin
   Put_Line( "Max =" & Max(6.7, 8.9)'Img);
   Put_Line( "Max2 =" & Max2(6.7, 8.9)'Img);
   Put_Line( "AvgOfTwo =" & AvgOfTwo(2.0, 3.0)'Img);
+  Put_Line( "Factorial of 5 =" & factorial(5)'Img);
   Print_Fibo(12);
 end Lab1;  

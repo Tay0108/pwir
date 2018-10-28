@@ -1,0 +1,89 @@
+V "GNAT Lib v2018"
+M P W=b
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV SPARK_05
+
+U zad1%b		zad1.adb		ae47e911 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.img_bool%s	s-imgboo.adb		s-imgboo.ali
+Z system.img_real%s	s-imgrea.adb		s-imgrea.ali
+
+D ada.ads		20180525052300 76789da1 ada%s
+D a-except.ads		20180525052301 291912d5 ada.exceptions%s
+D a-flteio.ads		20180525052300 e18a47a0 ada.float_text_io%s
+D a-ioexce.ads		20180525052259 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20180525052300 bb51c45a ada.numerics%s
+D a-nuflra.ads		20180525052300 4056ab7a ada.numerics.float_random%s
+D a-stream.ads		20180525052300 119b8fb3 ada.streams%s
+D a-tags.ads		20180525052302 491b781d ada.tags%s
+D a-textio.ads		20180525052302 881db35a ada.text_io%s
+D a-tiflio.ads		20180525052259 56fbda09 ada.text_io.float_io%s
+D a-unccon.ads		20180525052301 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180525052300 5ab55268 interfaces%s
+D i-cstrea.ads		20180525052259 e53d8b8e interfaces.c_streams%s
+D system.ads		20180525052301 4635ec04 system%s
+D s-crtl.ads		20180525052259 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180525052301 54135002 system.exception_table%s
+D s-ficobl.ads		20180525052302 078245e4 system.file_control_block%s
+D s-imgboo.ads		20180525052259 f5d971eb system.img_bool%s
+D s-imgrea.ads		20180525052259 c7a851e2 system.img_real%s
+D s-parame.ads		20180525052302 48ec542b system.parameters%s
+D s-rannum.ads		20180525052300 99ade2f2 system.random_numbers%s
+D s-secsta.ads		20180525052301 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180525052300 a7318a92 system.soft_links%s
+D s-stache.ads		20180525052302 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180525052301 09bd3940 system.standard_library%s
+D s-stoele.ads		20180525052302 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180525052300 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180525052301 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180525052301 1b7d22d2 system.wch_con%s
+D zad1.adb		20181025144525 8786b691 zad1%b
+X 1 ada.ads
+16K9*Ada 20e8 30|3r6 3r18 3r37 4r5 4r17 4r36
+X 3 a-flteio.ads
+20K13*Float_Text_IO[10|46] 30|3w22 4r21
+X 5 a-numeri.ads
+16K13*Numerics 32e17 30|3r41 4r40
+X 6 a-nuflra.ads
+41K22*Float_Random 74e30 30|3w50 4r49
+47R9*Generator<21|63R9> 30|23r7
+49F12*Uniformly_Distributed{float}
+51V13*Random{49F12}<21|71p13> 30|28s17
+53U14*Reset<21|100p14> 30|26s1
+X 9 a-textio.ads
+49K13*Text_IO 471e16 30|3w10 4r9
+242U14*Put 30|16s9 78s5 79s5 83s5
+X 30 zad1.adb
+6U11*zad1 6b11 86l5 86t9
+8A6 Wektor(float)<integer> 11r8 13r29 22r38 34r26 40r34 73r11
+11a1 Tab1{8A6} 76m21 76r21 77r19 78r21 80m17 80r17 81r19 83r21
+13U11 wypisz_wektor 13b11 13>25 19l5 19t18 77s5 81s5
+13a25 A{8A6} 15r20
+15f9 Element=15:20{float} 16r13
+22U11 wypelnij_losowo 22b11 22=27 30l5 30t20 76s5
+22a27 A{8A6} 27r14 28m9
+23r1 Gen{6|47R9} 26r7 28r24
+27i9 i{integer} 28r11
+34V10 czy_rosnacy{boolean} 34b10 34>22 37l5 37t16 78s9 79s9 83s9
+34a22 A{8A6} 36r37 36r51 36r63
+36i21 element{integer} 36r53 36r65
+40U11 sort_wektor 40b11 40=23 58l5 58t16 80s5
+40a23 A{8A6} 45r12 48r17 49r10 49r17 54r13 55m5 55r13 56m5
+41i5 Min_Id{integer} 47m5 49r19 50m9 55r15 56r7
+42f5 Swap{float} 54m5 56r18
+45i7 I{integer} 47r15 48r14 54r15 55r7
+48i9 J{integer} 49r12 50r19
+73a1 rosnacy{8A6} 79r21
+
