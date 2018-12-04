@@ -1,0 +1,19 @@
+% spawn(Module, Name, Args) - tworzy nowy proces, zwraca PID
+% PID danego procesu - self()
+
+% jeden sposob komunikacji miedzyprocesowej - wiadomosci. Kolejka FIFO.
+% skladnia wiadomosci: PID ! wiadomość (czyli lista, krotka - jeden term).
+% to powoduje ze do kolejki FIFO jest wrzucana ta wiadomość. Jest to komunikacja asynchroniczna. 
+% Wymiana danych w jedną stronę.
+% spotkanie jest synchroniczne (ale nie ma go w erlangu afaik)
+
+% receive - wpisujemy tam to czego sie spodziewamy ze przyjdze z kolejki FIFO. Jak dostaniemy
+% dany sygnał to wykona się to co tam jest. Taki switch() z case'ami trochę.
+
+% niedopasowane wiadomosci z kolejki FIFO są przerzucane do kolejki zapasowej.
+% stoimy na receive i czekamy na wiadomosc, która mozemy obsluzyc.
+
+% flush() - czysci naszą kolejkę wiadomości.
+
+% fm() - funkcja main (konwencja)
+
